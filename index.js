@@ -22,7 +22,7 @@ class Menu {
         this.books = []; 
     }
 
-    // add cars 
+    // add books 
     //prompt for a make and color
     //create new book and push book into array
 
@@ -32,13 +32,13 @@ class Menu {
         this.books.push(new Book(bookMake, bookColor));
     }
 
-    //delete cars
+    //delete books
     deleteBook(){
         let bookIndex = prompt("Enter book index to DELETE:"); 
         this.books.splice(bookIndex, 1); 
     }
 
-    //view cars
+    //view books
     viewBook(){
         let displayBooks = ''; 
         for(let i=0; i < this.books.length; i++){
